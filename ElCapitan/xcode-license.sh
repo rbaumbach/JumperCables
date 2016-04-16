@@ -2,6 +2,5 @@
 
 echo
 echo "Accepting Xcode Software License Agreement..."
-echo
 
-xcodebuild -license accept
+sudo xcodebuild -license accept

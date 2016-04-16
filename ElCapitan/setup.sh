@@ -10,3 +10,4 @@ echo
 echo "Giving El Capitan a jump..."
 
 ${MY_DIR}/xcode-license.sh
+${MY_DIR}/homebrew.sh
