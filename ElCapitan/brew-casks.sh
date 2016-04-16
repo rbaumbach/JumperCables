@@ -14,6 +14,7 @@ brew cask install dropbox
 brew cask install firefox
 brew cask install flux
 brew cask install handbrake
+brew cask install intellij-idea-ce
 brew cask install kindle
 brew cask install macdown
 brew cask install opera

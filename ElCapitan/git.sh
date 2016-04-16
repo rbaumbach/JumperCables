@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Installing homebrew git"
+brew install git
+
 echo
 echo "Setting global Git configurations"
 git config --global
