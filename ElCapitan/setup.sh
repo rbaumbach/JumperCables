@@ -17,3 +17,4 @@ ${MY_DIR}/ruby.sh
 ${MY_DIR}/node.sh
 ${MY_DIR}/mongodb.sh
 ${MY_DIR}/brew-casks.sh
+${MY_DIR}/osx-configs.sh
