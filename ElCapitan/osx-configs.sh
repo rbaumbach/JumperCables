@@ -14,7 +14,6 @@ killall Dock
 echo
 echo "Displaying full path in title bar"
 defaults write com.apple.finder '_FXShowPosixPathInTitle' -bool true
-
 killall Finder
 
 echo
