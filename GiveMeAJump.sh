@@ -12,5 +12,5 @@ if [ "$1" == "" ] || [ "$1" == "el-capitan" ]
 then
     ${EL_CAPITAN_SCRIPTS_DIR}/setup.sh
 else
-	echo "Incorrect arguments"
+    echo "Incorrect arguments"
 fi
