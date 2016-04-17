@@ -32,7 +32,7 @@ If you have saved .ssh and .gnupg directories you would like to be copied on a n
 If you'd like to customize this project for a project's use:
 
 - Fork the project
-- Edit the shells scripts to your liking
+- Edit the scripts to your liking
 
 ## Acknowledgements
 
