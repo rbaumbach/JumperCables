@@ -11,3 +11,13 @@ git config --global user.name Ryan
 git config --global user.email github@ryan.codes
 git config --global gpg.program gpg2
 git config --global commit.gpgsign true
+
+echo
+echo "Installing git-aware-prompt"
+mkdir ~/.bash
+git clone https://github.com/jimeh/git-aware-prompt.git ~/.bash/
+echo '# git-aware-prompt' >> ~/.bash_profile
+echo '' >> ~/.bash_profile
+echo 'GITAWAREPROMPT=~/.bash/git-aware-prompt' >> ~/.bash_profile
+echo 'export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "' >> ~/.bash_profile
+echo 'export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ "' >> ~/.bash_profile
