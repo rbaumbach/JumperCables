@@ -18,7 +18,7 @@ $ cd JumperCables
 $ ./GiveMeAJump.sh
 ```
 
-If you have saved .ssh and .gnupg directories you would like to be copied on a new machine, copy these to the root directory of Jumper Cables.  The scripts will find these use them.  See [gpg.sh](https://github.com/rbaumbach/JumperCables/blob/master/ElCapitan/gpg.sh) or [ssh.sh]https://github.com/rbaumbach/JumperCables/blob/master/ElCapitan/ssh.sh() for more details.
+If you have saved .ssh and .gnupg directories you would like to be copied on a new machine, copy these to the root directory of Jumper Cables.  The scripts will find these use them.  See [gpg.sh](https://github.com/rbaumbach/JumperCables/blob/master/ElCapitan/gpg.sh) or [ssh.sh](https://github.com/rbaumbach/JumperCables/blob/master/ElCapitan/ssh.sh) for more details.
 
 
 
