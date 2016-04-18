@@ -4,6 +4,15 @@ echo
 echo "Installing Java"
 
 echo
+echo "Installing jEnv to handle Java versioning"
+brew install jenv
+echo '# jEnv' >> ~/.bash_profile
+echo '' >> ~/.bash_profile
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(jenv init -)"' >> ~/.bash_profile
+echo '' >> ~/.bash_profile
+
+echo
 echo "Adding Homebrew versions"
 brew tap homebrew/versions
 
@@ -18,15 +27,6 @@ brew cask install java7
 echo
 echo "Installing Java 8"
 brew cask install java8
-
-echo
-echo "Installing jEnv to handle Java versioning"
-brew install jenv
-echo '# jEnv' >> ~/.bash_profile
-echo '' >> ~/.bash_profile
-echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(jenv init -)"' >> ~/.bash_profile
-echo '' >> ~/.bash_profile
 
 echo
 echo "Hooking up Java 6/7/8 to jEnv"

@@ -3,6 +3,7 @@
 echo
 
 if hash brew 2>/dev/null; then
+    echo
     echo "Homebrew is already installed!"
 else
     echo "Installing Homebrew..."
@@ -25,6 +26,7 @@ echo
 echo "Ensuring you have a healthy Homebrew environment..."
 brew doctor
 
+echo
 echo "Cleaning up your Homebrew installation..."
 brew cleanup
 

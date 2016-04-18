@@ -9,6 +9,13 @@ brew install rbenv
 eval "$(rbenv init -)"
 
 echo
+echo "Adding rbenv initialization to .bash_profile..."
+echo '# rbenv' >> ~/.bash_profile
+echo '' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+echo '' >> ~/.bash_profile
+
+echo
 echo "Installing ruby version 2.1.9"
 rbenv install 2.1.9 --skip-existing
 
@@ -28,10 +35,3 @@ echo
 echo "Installing bundler...."
 gem install bundler
 rbenv rehash
-
-echo
-echo "Adding rbenv initialization to .bash_profile..."
-echo '# rbenv' >> ~/.bash_profile
-echo '' >> ~/.bash_profile
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-echo '' >> ~/.bash_profile
