@@ -2,7 +2,6 @@
 
 echo
 echo "Installing brew casks"
-
 brew cask install alfred
 brew cask install android-studio
 brew cask install app-cleaner
