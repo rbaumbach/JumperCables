@@ -30,9 +30,18 @@ brew cask install java
 
 echo
 echo "Hooking up Java 6/7/8 to jEnv"
-jenv add /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-jenv add /Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home
-jenv add /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home
+
+JAVA_VM_DIR="/Library/Java/JavaVirtualMachines/*"
+
+for jvm_dir in ${JAVA_VM_DIR}
+do
+    full_jvm_dir=${jvm_dir}/Contents/Home
+    jvm_dir_name=${jvm_dir##*/}
+
+    echo
+    echo "Adding ${jvm_dir_name} to jEnv"
+    jenv add ${full_jvm_dir}
+done
 
 echo
 echo "Setting global version of Java to 1.8.0.66"
