@@ -18,15 +18,15 @@ brew tap homebrew/versions
 
 echo
 echo "Installing Java 6"
-brew cask install java6
+brew cask install Caskroom/versions/java6
 
 echo
 echo "Installing Java 7"
-brew cask install java7
+brew cask install Caskroom/versions/java7
 
 echo
 echo "Installing Java 8"
-brew cask install java8
+brew cask install java
 
 echo
 echo "Hooking up Java 6/7/8 to jEnv"
