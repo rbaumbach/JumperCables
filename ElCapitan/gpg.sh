@@ -13,6 +13,7 @@ echo '# gpg2' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
 echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
+source ~/.bash_profile
 
 NEW_GPG_DIR="$(dirname "$0")/.gnupg"
 CURRENT_GPG_DIR="~/.gnupg"

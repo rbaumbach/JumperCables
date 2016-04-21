@@ -22,3 +22,4 @@ echo 'GITAWAREPROMPT=~/.bash/git-aware-prompt' >> ~/.bash_profile
 echo 'export PS1="\u@\h \W \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "' >> ~/.bash_profile
 echo 'export SUDO_PS1="\[$bakred\]\u@\h\[$txtrst\] \w\$ "' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
+source ~/.bash_profile
