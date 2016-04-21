@@ -11,6 +11,7 @@ HOME_DIR="~/"
 if [ -d "$NEW_SSH_DIR" ]
 then
     if [ -d "$CURRENT_SSH_DIR" ]
+    then
         echo
         echo "Found existing $CURRENT_SSH_DIR, renaming to $CURRENT_SSH_DIR_BAK"
         mv ${CURRENT_SSH_DIR} ${CURRENT_SSH_DIR_BAK}
@@ -18,7 +19,6 @@ then
         echo
         echo "Copying over $NEW_SSH_DIR to $CURRENT_SSH_DIR"
         cp -avR #{NEW_SSH_DIR} #{HOME_DIR} 
-    then
     else
         echo
         echo "Starting proces to generate ssh keys"

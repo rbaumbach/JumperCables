@@ -32,21 +32,24 @@ brew cask install java
 echo
 echo "Hooking up Java 6/7/8 to jEnv"
 
-JAVA_VM_DIR="/Library/Java/JavaVirtualMachines/*"
+JVM_DIR="/Library/Java/JavaVirtualMachines/"
 
-for jvm_dir in ${JAVA_VM_DIR}
+for dir in ${JVM_DIR}/*
 do
-    full_jvm_dir=${jvm_dir}/Contents/Home
-    jvm_dir_name=${jvm_dir##*/}
+    jvm_dir_name=${dir##*/}
+    full_jvm_dir=${dir}/Contents/Home
 
     echo
     echo "Adding ${jvm_dir_name} to jEnv"
     jenv add ${full_jvm_dir}
 done
 
+MOST_CURRENT_JVM=$(ls -t ${JVM_DIR} | head -1)
+MOST_CURRENT_JVM__VERSION_NAME=$(echo ${BACKUPDIR} | sed -e 's/jdk//' -e 's/_/./' -e 's/.jdk//')
+
 echo
-echo "Setting global version of Java to 1.8.0.66"
-jenv global 1.8.0.66
+echo "Setting global version of Java to ${MOST_CURRENT_JVM__VERSION_NAME}"
+jenv global ${MOST_CURRENT_JVM__VERSION_NAME}
 jenv rehash
 
 echo
