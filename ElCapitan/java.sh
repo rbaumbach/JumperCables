@@ -45,7 +45,7 @@ do
 done
 
 MOST_CURRENT_JVM=$(ls -t ${JVM_DIR} | head -1)
-MOST_CURRENT_JVM__VERSION_NAME=$(echo ${BACKUPDIR} | sed -e 's/jdk//' -e 's/_/./' -e 's/.jdk//')
+MOST_CURRENT_JVM__VERSION_NAME=$(echo ${MOST_CURRENT_JVM} | sed -e 's/jdk//' -e 's/_/./' -e 's/.jdk//')
 
 echo
 echo "Setting global version of Java to ${MOST_CURRENT_JVM__VERSION_NAME}"
