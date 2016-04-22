@@ -8,6 +8,7 @@ echo
 echo "Staring gpg-agent"
 gpg-agent --daemon --use-standard-socket
 echo 'use-standard-socket' >> ~/.gnupg/gpg-agent.conf
+gpg2 --list-keys
 
 echo '# gpg2' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
