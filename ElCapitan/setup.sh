@@ -9,7 +9,7 @@ echo "Giving El Capitan a jump..."
 
 MY_DIR="$(dirname "$0")"
 
-${MY_DIR}/xcode-license.sh
+${MY_DIR}/xcode.sh
 ${MY_DIR}/homebrew.sh
 ${MY_DIR}/git.sh
 ${MY_DIR}/gpg.sh
