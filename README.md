@@ -18,15 +18,12 @@ $ cd JumperCables
 $ ./GiveMeAJump.sh
 ```
 
-If you have saved .ssh and .gnupg directories you would like to be copied on a new machine, copy these to the root directory of Jumper Cables.  The scripts will find these use them.  See [gpg.sh](https://github.com/rbaumbach/JumperCables/blob/master/ElCapitan/gpg.sh) or [ssh.sh](https://github.com/rbaumbach/JumperCables/blob/master/ElCapitan/ssh.sh) for more details.
-
-
-
 ## Future Goals
 
 - Make it 100% automated! Currently the scripts require usernames, passwords and login credentials throughout the execution.
 - To strip out all "hardcoded" values and create a config file to make these scripts more generic.
 - Make scripts less destructive so that if they are run on a machine that isn't bare bones they don't overwrite existing configurations.
+- Add ability to provide .ssh and .gnupg directories before running scripts and not generate new default ones.
 
 ## For your personal usage
 

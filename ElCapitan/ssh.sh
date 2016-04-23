@@ -3,27 +3,19 @@
 echo
 echo "Setting up ssh keys..."
 
-NEW_SSH_DIR="$(dirname "$0")/.ssh"
-CURRENT_SSH_DIR="~/.ssh"
-CURRENT_SSH_DIR_BAK="~/.ssh_bak"
-HOME_DIR="~/"
+SSH_EMAIL="baumbach@ryan.codes"
+DEFAULT_KEY_FILE=${HOME}/.ssh/id_rsa
+LOCAL_USER_SSH_DIR=${HOME}/.ssh
+LOCAL_USER_SSH_DIR_BAK=${HOME}/.ssh_bak
 
-if [ -d "$NEW_SSH_DIR" ]
-then
-    if [ -d "$CURRENT_SSH_DIR" ]
-    then
-        echo
-        echo "Found existing $CURRENT_SSH_DIR, renaming to $CURRENT_SSH_DIR_BAK"
-        mv ${CURRENT_SSH_DIR} ${CURRENT_SSH_DIR_BAK}
-        
-        echo
-        echo "Copying over $NEW_SSH_DIR to $CURRENT_SSH_DIR"
-        cp -avR #{NEW_SSH_DIR} #{HOME_DIR} 
-    else
-        echo
-        echo "Starting proces to generate ssh keys"
-        ssh-keygen -t rsa -b 4096 -C "baumbach@ryan.codes"
-        eval "$(ssh-agent -s)"
-        ssh-add $CURRENT_SSH_DIR/id_rsa
-    fi
-fi
+echo
+echo "Generating default ssh key"
+ssh-keygen -t rsa -b 4096 -C $SSH_EMAIL -f $DEFAULT_KEY_FILE
+
+echo
+echo "Starting ssh-agent..."
+eval "$(ssh-agent -s)"
+
+echo
+echo "Adding $DEFAULT_KEY_FILE to ssh-agent"
+ssh-add $DEFAULT_KEY_FILE
