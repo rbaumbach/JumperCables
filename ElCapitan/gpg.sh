@@ -14,6 +14,9 @@ echo
 echo "Staring gpg-agent"
 gpg-agent --daemon --use-standard-socket
 echo 'use-standard-socket' >> ~/.gnupg/gpg-agent.conf
+
+echo
+echo "Generating gpg key"
 gpg2 --gen-key
 
 echo

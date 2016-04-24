@@ -19,6 +19,7 @@ ${MY_DIR}/node.sh
 ${MY_DIR}/mongodb.sh
 ${MY_DIR}/heroku.sh
 ${MY_DIR}/ssh.sh
-${MY_DIR}/brew-casks.sh
 ${MY_DIR}/osx-configs.sh
+${MY_DIR}/brew-casks.sh
+${MY_DIR}/mac-app-store.sh
 ${MY_DIR}/the-end.sh
