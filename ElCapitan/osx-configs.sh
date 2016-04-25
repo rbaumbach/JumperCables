@@ -65,18 +65,18 @@ echo "Disable auto open safe filedownloading"
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool NO
 
 echo
-echo "Disable Photos from opening automatically"
-defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
+echo "Updating other configurations"
 
 echo
-echo "Updating other configurations"
+echo "Disable Photos from opening automatically"
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
 
 echo
 echo "Disable 'smart' quotes"
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool NO
 
 echo
-echo "Disable 'smarl' dashes"
+echo "Disable 'smart' dashes"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool NO
 
 echo
