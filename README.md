@@ -1,4 +1,4 @@
-# JumperCables
+# Jumper Cables
 A set of scripts that give a fresh install of OS X a jump
 
 **Note: Currently these are a set of scripts that I personally use to set up a bare bones machine.**
