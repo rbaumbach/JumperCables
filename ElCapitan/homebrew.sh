@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-echo
+#!/bin/bash
 
 if hash brew 2>/dev/null; then
     echo
