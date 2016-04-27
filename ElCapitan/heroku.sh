@@ -3,4 +3,3 @@
 echo
 echo "Installing Heroku toolbelt"
 brew install heroku-toolbelt
-heroku login
