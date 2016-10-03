@@ -17,20 +17,20 @@ echo '' >> ~/.bash_profile
 source ~/.bash_profile
 
 echo
-echo "Installing ruby version 2.1.9"
-rbenv install 2.1.9 --skip-existing
-
-echo
-echo "Installing ruby version 2.2.4"
-rbenv install 2.2.4 --skip-existing
+echo "Installing ruby version 2.2.5"
+rbenv install 2.2.5 --skip-existing
 
 echo
 echo "Installing ruby version 2.3.0"
 rbenv install 2.3.0 --skip-existing
 
 echo
-echo "Setting global version of ruby to 2.3.0"
-rbenv global 2.3.0
+echo "Installing ruby version 2.3.1"
+rbenv install 2.3.1 --skip-existing
+
+echo
+echo "Setting global version of ruby to 2.3.1"
+rbenv global 2.3.1
 rbenv rehash
 
 echo
