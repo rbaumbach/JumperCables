@@ -5,7 +5,7 @@ A set of scripts that give a fresh install of OS X a jump
 
 ## Requirements
 
-- Scripts currently only support [El Capitan](https://itunes.apple.com/us/app/os-x-el-capitan/id1018109117)
+- Scripts currently only support [El Capitan](https://itunes.apple.com/us/app/os-x-el-capitan/id1018109117) and [Sierra](https://itunes.apple.com/us/app/macos-sierra/id1127487414?mt=12)
 - Install [Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
 
 ## Using Jumper Cables
