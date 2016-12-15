@@ -5,7 +5,6 @@ echo "Installing brew casks"
 brew cask install alfred
 brew cask install android-studio
 brew cask install appcleaner
-brew cask install atom
 brew cask install carbon-copy-cloner
 brew cask install ccmenu
 brew cask install cyberduck
