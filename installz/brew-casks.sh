@@ -18,6 +18,7 @@ brew cask install Caskroom/versions/intellij-idea-ce
 brew cask install kindle
 brew cask install macdown
 brew cask install opera
+brew cask install pngyu
 brew cask install skitch
 brew cask install steam
 brew cask install textwrangler
