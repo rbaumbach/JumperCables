@@ -32,6 +32,7 @@ ${MY_DIR}/node.sh
 ${MY_DIR}/mongodb.sh
 ${MY_DIR}/misc-dev-tools.sh
 ${MY_DIR}/ssh.sh
+${MY_DIR}/brews.sh
 ${MY_DIR}/brew-casks.sh
 ${MY_DIR}/atom.sh
 ${MY_DIR}/mac-app-store.sh

@@ -9,7 +9,7 @@ brew cask install carbon-copy-cloner
 brew cask install ccmenu
 brew cask install cyberduck
 brew cask install dash
-brew cask install dropbox
+brew cask install docker
 brew cask install firefox
 brew cask install flux
 brew cask install handbrake
@@ -21,7 +21,6 @@ brew cask install opera
 brew cask install pngyu
 brew cask install skitch
 brew cask install steam
-brew cask install textwrangler
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install xscope
