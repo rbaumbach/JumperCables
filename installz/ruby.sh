@@ -32,3 +32,9 @@ rbenv rehash
 echo
 echo "Installing bundler...."
 gem install bundler
+rbenv rehash
+
+echo
+echo "Setting up bundler global config"
+bundle config --global gem.coc false
+bundle config --global gem.mit false
