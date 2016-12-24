@@ -32,7 +32,7 @@ echo
 echo "Disabling Homebrew Tracking"
 echo '# Homebrew' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
-echo 'export GITAWAREPROMPT=~/.bash/git-aware-prompt' >> ~/.bash_profile
+echo 'export HOMEBREW_NO_ANALYTICS=1' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
 source ~/.bash_profile
 
