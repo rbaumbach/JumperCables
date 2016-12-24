@@ -25,12 +25,8 @@ echo "Installing ruby version 2.3.0"
 rbenv install 2.3.0 --skip-existing
 
 echo
-echo "Installing ruby version 2.3.1"
-rbenv install 2.3.1 --skip-existing
-
-echo
-echo "Setting global version of ruby to 2.3.1"
-rbenv global 2.3.1
+echo "Setting global version of ruby to 2.3.3"
+rbenv global 2.3.3
 rbenv rehash
 
 echo
