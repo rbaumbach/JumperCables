@@ -35,6 +35,7 @@ ${MY_DIR}/ssh.sh
 ${MY_DIR}/brews.sh
 ${MY_DIR}/brew-casks.sh
 ${MY_DIR}/atom.sh
+${MY_DIR}/bash_profile.sh
 ${MY_DIR}/mac-app-store.sh
 
 # Handling configurations separately since they can vary depending

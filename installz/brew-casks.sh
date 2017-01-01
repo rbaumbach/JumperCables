@@ -15,6 +15,7 @@ brew cask install flux
 brew cask install handbrake
 brew cask install imageoptim
 brew cask install Caskroom/versions/intellij-idea-ce
+brew cask install iterm2
 brew cask install kindle
 brew cask install launchcontrol
 brew cask install macdown
