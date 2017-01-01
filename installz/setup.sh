@@ -44,3 +44,7 @@ ${MY_DIR}/mac-app-store.sh
 ${CONFIG_OS_DIR}/osx-configs.sh
 
 ${MY_DIR}/the-end.sh
+
+# Switch to new bash
+# TODO: Needs to be tested
+# ${MY_DIR}/bash.sh
