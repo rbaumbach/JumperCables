@@ -46,5 +46,4 @@ ${MY_DIR}/bash.sh
 # on the OS version
 
 ${CONFIG_OS_DIR}/osx-configs.sh
-
 ${MY_DIR}/the-end.sh
