@@ -17,6 +17,7 @@ brew install pinentry-mac
 echo
 echo "Generating gpg key"
 gpg2 --gen-key
+# gpg2 --full-gen-key
 
 echo
 echo "Hook up pinentry-mac to gpg-agent"

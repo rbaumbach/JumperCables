@@ -15,7 +15,7 @@ then
 elif [ "$1" == "el-capitan" ]
 then
     echo "Giving El Capitan a jump..."
-    CONFIG_OS_DIR=${MY_DIR}/../${1}
+    CONFIG_OS_DIR=${MY_DIR}/../ElCapitan
 else
     echo "Incorrect arguments"
     exit 1
