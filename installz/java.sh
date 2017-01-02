@@ -14,10 +14,6 @@ echo '' >> ~/.bash_profile
 source ~/.bash_profile
 
 echo
-echo "Adding Homebrew versions"
-brew tap homebrew/versions
-
-echo
 echo "Installing Java 6"
 brew cask install Caskroom/versions/java6
 

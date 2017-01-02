@@ -29,6 +29,10 @@ echo "Cleaning up your Homebrew installation..."
 brew cleanup
 
 echo
+echo "Adding Homebrew versions"
+brew tap homebrew/versions
+
+echo
 echo "Disabling Homebrew Tracking"
 echo '# Homebrew' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
