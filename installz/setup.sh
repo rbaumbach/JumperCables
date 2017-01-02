@@ -36,7 +36,11 @@ ${MY_DIR}/brews.sh
 ${MY_DIR}/brew-casks.sh
 ${MY_DIR}/atom.sh
 ${MY_DIR}/bash_profile.sh
-${MY_DIR}/mac-app-store.sh
+${MY_DIR}/bash.sh
+
+# Leaving out Mac App Store apps for next release
+
+# ${MY_DIR}/mac-app-store.sh
 
 # Handling configurations separately since they can vary depending
 # on the OS version
@@ -44,7 +48,3 @@ ${MY_DIR}/mac-app-store.sh
 ${CONFIG_OS_DIR}/osx-configs.sh
 
 ${MY_DIR}/the-end.sh
-
-# Switch to new bash
-# TODO: Needs to be tested
-# ${MY_DIR}/bash.sh

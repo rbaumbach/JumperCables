@@ -22,6 +22,7 @@ brew cask install macdown
 brew cask install opera
 brew cask install pngyu
 brew cask install skitch
+brew cask install spectacle
 brew cask install steam
 brew cask install visual-studio-code
 brew cask install vlc
