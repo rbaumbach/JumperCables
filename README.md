@@ -20,6 +20,7 @@ $ ./GiveMeAJump.sh
 
 ## Future Goals
 
+- Update shebangs to `/usr/bin/env bash` since Homebrew bash is installed
 - Make it 100% automated! Currently the scripts require usernames, passwords and login credentials throughout the execution.
 - To strip out all "hardcoded" values and create a config file to make these scripts more generic.
 - Make scripts less destructive so that if they are run on a machine that isn't bare bones they don't overwrite existing configurations.
