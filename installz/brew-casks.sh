@@ -2,6 +2,9 @@
 
 echo
 echo "Installing brew casks"
+echo "Adding Homebrew versions for intellij-idea-ce"
+brew tap homebrew/versions
+
 brew cask install alfred
 brew cask install android-studio
 brew cask install appcleaner
