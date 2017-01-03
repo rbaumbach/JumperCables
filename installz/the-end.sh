@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo
 echo "Be sure to add your Github Homebrew API token to ~/.bash_profile"
