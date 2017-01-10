@@ -13,5 +13,5 @@ echo '' >> ~/.bash_profile
 
 echo
 echo "Disable fastlane tracking"
-echo 'export FASTLANE_OPT_OUT=1' >> ~/.bash_profile
+echo 'export FASTLANE_OPT_OUT_USAGE=1' >> ~/.bash_profile
 echo '' >> ~/.bash_profile
