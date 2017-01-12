@@ -4,22 +4,27 @@
 
 set -e
 
-echo
-
 MY_DIR="$(dirname "$0")"
 CONFIG_OS_DIR=${MY_DIR}/../sierra
 
 if [ "$1" == "" ] || [ "$1" == "sierra" ]
 then
+    echo
     echo "Giving Sierra a jump..."
 elif [ "$1" == "el-capitan" ]
 then
+    echo
     echo "Giving El Capitan a jump..."
     CONFIG_OS_DIR=${MY_DIR}/../ElCapitan
 else
+    echo
     echo "Incorrect arguments"
     exit 1
 fi
+
+echo
+echo "Loading up config ENVs"
+source ${MY_DIR}/../configz/config.sh
 
 ${MY_DIR}/xcode.sh
 echo | ${MY_DIR}/homebrew.sh

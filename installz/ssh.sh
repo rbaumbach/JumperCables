@@ -16,14 +16,9 @@ else
   echo
   echo ".ssh directory not found, will generate default ssh key"
 
-  SSH_EMAIL="baumbach@ryan.codes"
-  DEFAULT_KEY_FILE=${HOME}/.ssh/id_rsa
-  LOCAL_USER_SSH_DIR=${HOME}/.ssh
-  LOCAL_USER_SSH_DIR_BAK=${HOME}/.ssh_bak
-
   echo
   echo "Generating default ssh key"
-  ssh-keygen -t rsa -b 4096 -C $SSH_EMAIL -f $DEFAULT_KEY_FILE
+  ssh-keygen -t rsa -b 4096 -C $SSH_KEY_EMAIL -f $SSH_KEY_FILE
 fi
 
 
