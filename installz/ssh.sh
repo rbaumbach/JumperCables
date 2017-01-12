@@ -18,7 +18,7 @@ else
 
   echo
   echo "Generating default ssh key"
-  ssh-keygen -t rsa -b 4096 -C $SSH_KEY_EMAIL -f $SSH_KEY_FILE
+  ssh-keygen -t rsa -b 4096 -C $SSH_KEY_EMAIL -N "'$SSH_KEY_PASSPHRASE'" -f $SSH_KEY_NAME
 fi
 
 # echo
