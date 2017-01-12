@@ -1,0 +1,9 @@
+# GPG unattended install config
+
+Key-Type: default
+Name-Real: Ryan Baumbach
+Name-Comment: GPG and what not
+Name-Email: github@ryan.codes
+Expire-Date: <Enter expire date here>
+Passphrase: <Enter your passphrase here>
+%commit
