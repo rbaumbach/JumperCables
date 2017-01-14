@@ -16,15 +16,24 @@ else
   echo
   echo ".ssh directory not found, will generate default ssh key"
 
+  # eval is needed or else the ssh passphrase includes the double quotes
+  # in the passphrase
+
   echo
   echo "Generating default ssh key"
-  ssh-keygen -t rsa -b 4096 -C $SSH_KEY_EMAIL -N "'$SSH_KEY_PASSPHRASE'" -f $SSH_KEY_NAME
+  SSH_KEYGEN_COMMAND="ssh-keygen -t rsa -b 4096 -C $SSH_KEY_EMAIL -N "\"$SSH_KEY_PASSPHRASE"\" -f $SSH_KEY_NAME"
+  eval $SSH_KEYGEN_COMMAND
 fi
 
-# echo
-# echo "Starting ssh-agent..."
-# eval "$(ssh-agent -s)"
-#
-# echo
-# echo "Adding $DEFAULT_KEY_FILE to ssh-agent"
-# ssh-add $DEFAULT_KEY_FILE
+if [ ! -f ${FILEZ_DIR}/config ]
+then
+  echo
+  echo "ssh config file doesn't exist, creating it..."
+  echo "Host *" >> ~/.ssh/config
+  echo "  IdentitiesOnly yes" >> ~/.ssh/config
+  echo "  VisualHostKey yes" >> ~/.ssh/config
+fi
+
+echo
+echo "Starting ssh-agent..."
+eval "$(ssh-agent -s)"
