@@ -19,13 +19,11 @@ else
   # eval is needed or else the ssh passphrase includes the double quotes
   # in the passphrase
 
-  echo
-  echo "Generating default ssh key"
   SSH_KEYGEN_COMMAND="ssh-keygen -t rsa -b 4096 -C $SSH_KEY_EMAIL -N "\"$SSH_KEY_PASSPHRASE"\" -f $SSH_KEY_NAME"
   eval $SSH_KEYGEN_COMMAND
 fi
 
-if [ ! -f ${FILEZ_DIR}/config ]
+if [ ! -f ${FILEZ_DIR}/.ssh/config ]
 then
   echo
   echo "ssh config file doesn't exist, creating it..."
