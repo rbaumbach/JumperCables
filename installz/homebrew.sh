@@ -34,13 +34,12 @@ brew tap homebrew/versions
 
 echo
 echo "Disabling Homebrew Tracking"
-echo '# Homebrew' >> ~/.bash_profile
-echo '' >> ~/.bash_profile
-echo 'export HOMEBREW_NO_ANALYTICS=1' >> ~/.bash_profile
-echo '' >> ~/.bash_profile
-source ~/.bash_profile
+echo "# Homebrew" >> ~/.bash_profile
+echo "" >> ~/.bash_profile
+echo "export HOMEBREW_NO_ANALYTICS=$HOMEBREW_NO_ANALYTICS" >> ~/.bash_profile
+echo "" >> ~/.bash_profile
 
 echo
 echo "Adding Homebrew Github API token scaffolding."
-echo '# export HOMEBREW_GITHUB_API_TOKEN=<Add your token from Github here>' >> ~/.bash_profile
-echo '' >> ~/.bash_profile
+echo "# export HOMEBREW_GITHUB_API_TOKEN=$HOMEBREW_GITHUB_API_TOKEN" >> ~/.bash_profile
+echo "" >> ~/.bash_profile

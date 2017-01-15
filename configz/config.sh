@@ -3,6 +3,11 @@
 # ENVs that will be used throughout Jumper Cables
 # Make changes for your machine
 
+# homebrew.sh
+
+export HOMEBREW_GITHUB_API_TOKEN="<Your github api token for Homebrew>"
+export HOMEBREW_NO_ANALYTICS=1
+
 # git.sh
 
 export GIT_USER_NAME="Ryan"
