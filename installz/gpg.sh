@@ -3,6 +3,8 @@
 echo
 echo "Installing GPG"
 
+FILEZ_DIR="$(dirname "$0")"/../filez
+
 echo
 echo "Adding Homebrew versions for gpg 2.1x"
 brew tap homebrew/versions
@@ -15,9 +17,17 @@ echo "Installing pinentry-mac..."
 brew install pinentry-mac
 
 echo
-echo "Generating gpg key"
-gpg2 --gen-key
-# gpg2 --full-gen-key
+echo "Checking if .gnupg directory exists in filez directory..."
+if [ -d ${FILEZ_DIR}/.gnupg ]
+then
+    echo
+    echo ".ssh directory exists, copying it to ~/"
+    cp -r ${FILEZ_DIR}/.gnupg ~/
+else
+  echo
+  echo ".gnupg directory not found, will generate default gpg key"
+  gpg2 --verbose --batch --gen-key ${CONFIGZ_DIR}/gpg.txt
+fi
 
 echo
 echo "Hook up pinentry-mac to gpg-agent"
