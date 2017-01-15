@@ -13,6 +13,20 @@ export HOMEBREW_NO_ANALYTICS=1
 export GIT_USER_NAME="Ryan"
 export GIT_USER_EMAIL="github@ryan.codes"
 
+# gpg.sh
+
+# See https://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html
+# for all the file constraints
+
+#TODO:
+
+# export GPG_KEY_TYPE="default"
+# export GPG__KEY_USER_NAME="Ryan Baumbach"
+# export GPG_KEY_COMMENT="GPG and what not"
+# export GPG_KEY_EMAIL="github@ryan.codes"
+# export GPG_KEY_EXPIRY_DATE="1y"
+# export GPG_KEY_PASSPHRASE="<Enter your passphrase here>"
+
 # ssh.sh
 
 export SSH_KEY_EMAIL="github@ryan.codes"

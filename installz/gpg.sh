@@ -29,9 +29,12 @@ else
   gpg2 --verbose --batch --gen-key ${CONFIGZ_DIR}/gpg.txt
 fi
 
-echo
-echo "Hook up pinentry-mac to gpg-agent"
-echo 'pinentry-program /usr/local/bin/pinentry-mac' >> ~/.gnupg/gpg-agent.conf
+if [ ! -f ${CONFIGZ_DIR}/.gnupg/gpg-agent.conf ]
+then
+  echo
+  echo "Hook up pinentry-mac to gpg-agent"
+  echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+fi
 
 echo
 echo "Kill gpg-agent"
