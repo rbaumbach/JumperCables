@@ -3,6 +3,11 @@
 # ENVs that will be used throughout Jumper Cables
 # Make changes for your machine
 
+# git.sh
+
+export GIT_USER_NAME="Ryan"
+export GIT_USER_EMAIL="github@ryan.codes"
+
 # ssh.sh
 
 export SSH_KEY_EMAIL="github@ryan.codes"
