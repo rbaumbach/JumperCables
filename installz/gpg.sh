@@ -4,6 +4,7 @@ echo
 echo "Installing GPG"
 
 FILEZ_DIR="$(dirname "$0")"/../filez
+CONFIGZ_DIR="$(dirname "$0")"/../configz
 
 echo
 echo "Adding Homebrew versions for gpg 2.1x"
