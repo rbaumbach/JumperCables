@@ -3,15 +3,15 @@
 echo
 echo "Setting up ssh keys..."
 
-FILEZ_DIR="$(dirname "$0")"/../filez
+CONFIGZ_DIR="$(dirname "$0")"/../configz
 
 echo
 echo "Checking if .ssh directory exists in filez directory..."
-if [ -d ${FILEZ_DIR}/.ssh ]
+if [ -d ${CONFIGZ_DIR}/.ssh ]
 then
     echo
     echo ".ssh directory exists, copying it to ~/"
-    cp -r ${FILEZ_DIR}/.ssh ~/
+    cp -r ${CONFIGZ_DIR}/.ssh ~/
 else
   echo
   echo ".ssh directory not found, will generate default ssh key"
@@ -23,7 +23,7 @@ else
   eval $SSH_KEYGEN_COMMAND
 fi
 
-if [ ! -f ${FILEZ_DIR}/.ssh/config ]
+if [ ! -f ${CONFIGZ_DIR}/.ssh/config ]
 then
   echo
   echo "ssh config file doesn't exist, creating it..."

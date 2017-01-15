@@ -3,7 +3,6 @@
 echo
 echo "Installing GPG"
 
-FILEZ_DIR="$(dirname "$0")"/../filez
 CONFIGZ_DIR="$(dirname "$0")"/../configz
 
 echo
@@ -19,11 +18,11 @@ brew install pinentry-mac
 
 echo
 echo "Checking if .gnupg directory exists in filez directory..."
-if [ -d ${FILEZ_DIR}/.gnupg ]
+if [ -d ${CONFIGZ_DIR}/.gnupg ]
 then
     echo
     echo ".ssh directory exists, copying it to ~/"
-    cp -r ${FILEZ_DIR}/.gnupg ~/
+    cp -r ${CONFIGZ_DIR}/.gnupg ~/
 else
   echo
   echo ".gnupg directory not found, will generate default gpg key"

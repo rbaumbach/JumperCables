@@ -1,0 +1,14 @@
+This directory can be used to store other directories that can be referenced from
+the Jumper Cables script.
+
+1) Add .ssh directory with public/private ssh keys, configs, etc. here.  If this directory
+   exists, it will be copied over when the ssh.sh script is run instead of generating a
+   new default SSH key.
+
+   ex: .ssh/id_rsa.pub, .ssh/id_rsa, .ssh/config
+
+2) Add .gnupg directory with all your gpg files (keyrings, etc.) here.  If this directory
+   exists, it will be copied over when the gpg.sh script is run instead of generating a
+   new default gpg key.
+
+   ex: .gnupg/pubring.kbx, .gnupg/gpg-agent.conf
