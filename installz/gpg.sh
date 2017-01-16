@@ -26,6 +26,30 @@ then
 else
   echo
   echo ".gnupg directory not found, will generate default gpg key"
+
+  # Delete gpg.txt if it already exists
+
+  if [ -f ${CONFIGZ_DIR}/gpg.txt ]
+  then
+    rm ${CONFIGZ_DIR}/gpg.txt
+  fi
+
+  # See https://www.gnupg.org/documentation/manuals/gnupg/Unattended-GPG-key-generation.html
+  # for all the file constraints
+
+  echo
+  echo "Generating unattended GPG installation file"
+  echo "Key-Type: RSA" >> ${CONFIGZ_DIR}/gpg.txt
+  echo "Key-Length: 4096" >> ${CONFIGZ_DIR}/gpg.txt
+  echo "Name-Real: $GPG_KEY_USER_NAME" >> ${CONFIGZ_DIR}/gpg.txt
+  echo "Name-Comment: $GPG_KEY_COMMENT" >> ${CONFIGZ_DIR}/gpg.txt
+  echo "Name-Email: $GPG_KEY_EMAIL" >> ${CONFIGZ_DIR}/gpg.txt
+  echo "Expire-Date: $GPG_KEY_EXPIRY_DATE" >> ${CONFIGZ_DIR}/gpg.txt
+  echo "Passphrase: $GPG_KEY_PASSPHRASE" >> ${CONFIGZ_DIR}/gpg.txt
+  echo "%commit" >> ${CONFIGZ_DIR}/gpg.txt
+
+  echo
+  echo "Generating GPG key..."
   gpg2 --verbose --batch --gen-key ${CONFIGZ_DIR}/gpg.txt
 fi
 
