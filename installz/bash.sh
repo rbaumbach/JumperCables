@@ -4,6 +4,8 @@ echo
 echo "Installing latest bash..."
 brew install bash
 
+#TODO: These require sudo, figure out how to handle this
+
 echo
 echo "Adding /usr/local/bin/bash to /etc/shells"
 echo '/usr/local/bin/bash' | sudo tee -a /etc/shells

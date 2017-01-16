@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
+# TODO: Password is required for installing a brew cask the first time.
+# Figure out how to prevent this, or script it
+
 echo
 echo "Installing brew casks"
-echo "Adding Homebrew versions for intellij-idea-ce"
+echo "Adding Homebrew versions..."
 brew tap homebrew/versions
 
 brew cask install alfred
