@@ -3,6 +3,11 @@
 # ENVs that will be used throughout Jumper Cables
 # Make changes for your machine
 
+# setup.sh
+
+export INSTALL_JAVA=false
+export INSTALL_MAC_APPS=false
+
 # homebrew.sh
 
 export HOMEBREW_GITHUB_API_TOKEN="<Your github api token for Homebrew>"

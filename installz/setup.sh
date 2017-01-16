@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# $1 optional input for OS version string, ex: "sierra"
+
 # Fail immediately if any errors occur
 
 set -e
@@ -32,7 +34,6 @@ echo | ${MY_DIR}/homebrew.sh
 ${MY_DIR}/git.sh
 ${MY_DIR}/gpg.sh
 ${MY_DIR}/ruby.sh
-${MY_DIR}/java.sh
 ${MY_DIR}/node.sh
 ${MY_DIR}/mongodb.sh
 ${MY_DIR}/misc-dev-tools.sh
@@ -43,9 +44,15 @@ ${MY_DIR}/atom.sh
 ${MY_DIR}/bash_profile.sh
 ${MY_DIR}/bash.sh
 
-# Leaving out Mac App Store apps for next release
+if [ "$INSTALL_JAVA" = true ]
+then
+  ${MY_DIR}/java.sh
+fi
 
-# ${MY_DIR}/mac-app-store.sh
+if [ "$INSTALL_MAC_APPS" = true ]
+then
+  ${MY_DIR}/mac-app-store.sh
+fi
 
 # Handling configurations separately since they can vary depending
 # on the OS version
