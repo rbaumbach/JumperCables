@@ -31,6 +31,7 @@ else
 
   if [ -f ${CONFIGZ_DIR}/gpg.txt ]
   then
+    echo "Previous gpg.txt file found, deleting it..."
     rm ${CONFIGZ_DIR}/gpg.txt
   fi
 
