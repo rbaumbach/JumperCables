@@ -1,7 +1,26 @@
 #!/usr/bin/env bash
 
-# TODO: Password is required for installing a brew cask the first time.
-# Figure out how to prevent this, or script it
+MY_DIR="$(dirname "$0")"
+JUNK_DIR=${MY_DIR}/../junk
+
+# Note the manual creation of the Caskroom is needed so the first installation
+# of a cask doesn't prompt a user password
+
+echo
+echo "Creating /usr/local/Caskroom with proper permissions"
+
+# Get password from encrypted file
+
+I_GOTZ_CRED=$(openssl rsautl -decrypt -inkey $JUNK_DIR/junk_rsa -in $JUNK_DIR/.mi.6)
+
+$I_GOTZ_CRED | sudo -S mkdir /usr/local/Caskroom
+$I_GOTZ_CRED | sudo -S chmod 755 /usr/local/Caskroom
+$I_GOTZ_CRED | sudo -S chown $(whoami) /usr/local/Caskroom
+$I_GOTZ_CRED | sudo -S chgrp admin /usr/local/Caskroom
+
+# Immediately unset the I_GOTZ_CRED variable
+
+unset I_GOTZ_CRED
 
 echo
 echo "Installing brew casks"

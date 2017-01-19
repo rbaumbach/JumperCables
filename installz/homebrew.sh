@@ -6,10 +6,6 @@ if hash brew 2>/dev/null; then
 else
     echo "Installing Homebrew..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-    echo
-    echo "Ensuring your Homebrew directory is writable..."
-    chown -R $(whoami) /usr/local/bin
 fi
 
 echo
