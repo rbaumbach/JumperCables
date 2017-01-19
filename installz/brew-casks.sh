@@ -5,8 +5,6 @@
 
 echo
 echo "Installing brew casks"
-echo "Adding Homebrew versions..."
-brew tap homebrew/versions
 
 brew cask install alfred
 brew cask install android-studio

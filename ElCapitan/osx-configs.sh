@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+MY_DIR="$(dirname "$0")"
+JUNK_DIR=${MY_DIR}/../junk
+
 echo
 echo "Customizing OS X configurations"
 
@@ -49,9 +52,17 @@ killall Finder
 echo
 echo "Updating System Preferences"
 
+# Get password from encrypted file
+
+I_GOTZ_CRED=$(openssl rsautl -decrypt -inkey $JUNK_DIR/junk_rsa -in $JUNK_DIR/.mi.6)
+
 echo
 echo "Disable Gatekeeper auto renewal"
-sudo defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
+echo $I_GOTZ_CRED | sudo -S defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
+
+# Immediately unset the I_GOTZ_CRED variable
+
+unset I_GOTZ_CRED
 
 echo
 echo "Updating Safari Configurations"

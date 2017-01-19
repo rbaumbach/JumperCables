@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
-echo
-echo "Installing GPG"
-
 CONFIGZ_DIR="$(dirname "$0")"/../configz
 
 echo
-echo "Adding Homebrew versions for gpg 2.1x"
-brew tap homebrew/versions
+echo "Installing GPG"
 
 echo
 echo "Installing gpg2.1..."

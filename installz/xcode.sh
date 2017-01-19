@@ -9,6 +9,8 @@ I_GOTZ_CRED=$(openssl rsautl -decrypt -inkey $JUNK_DIR/junk_rsa -in $JUNK_DIR/.m
 
 echo
 echo "Accepting Xcode Software License Agreement..."
-echo $I_GOTZ_CRED | sudo -S sudo xcodebuild -license accept
+echo $I_GOTZ_CRED | sudo -S xcodebuild -license accept
+
+# Immediately unset the I_GOTZ_CRED variable
 
 unset I_GOTZ_CRED

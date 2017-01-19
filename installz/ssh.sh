@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
+CONFIGZ_DIR="$(dirname "$0")"/../configz
+
 echo
 echo "Setting up ssh keys..."
-
-CONFIGZ_DIR="$(dirname "$0")"/../configz
 
 echo
 echo "Checking if .ssh directory exists in filez directory..."
