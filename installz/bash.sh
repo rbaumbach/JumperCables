@@ -19,7 +19,7 @@ echo $I_GOTZ_CRED | sudo -S sh -c 'echo "/usr/local/bin/bash" >> /etc/shells'
 
 echo
 echo "Changing default shell to latest bash..."
-$I_GOTZ_CRED | sudo -S chsh -s /usr/local/bin/bash
+echo $I_GOTZ_CRED | sudo -S chsh -s /usr/local/bin/bash $(whoami)
 
 # Immediately unset the I_GOTZ_CRED variable
 

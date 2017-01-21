@@ -16,10 +16,10 @@ I_GOTZ_CRED=$(openssl rsautl -decrypt -inkey $JUNK_DIR/junk_rsa -in $JUNK_DIR/.m
 # These permissions are based on a bare bones macOS Sierra install and installing
 # a brew cask with Homebrew installed on 01/18/2016.
 
-$I_GOTZ_CRED | sudo -S mkdir /usr/local/Caskroom
-$I_GOTZ_CRED | sudo -S chmod 755 /usr/local/Caskroom
-$I_GOTZ_CRED | sudo -S chown $(whoami) /usr/local/Caskroom
-$I_GOTZ_CRED | sudo -S chgrp admin /usr/local/Caskroom
+echo $I_GOTZ_CRED | sudo -S mkdir /usr/local/Caskroom
+echo $I_GOTZ_CRED | sudo -S chmod 755 /usr/local/Caskroom
+echo $I_GOTZ_CRED | sudo -S chown $(whoami) /usr/local/Caskroom
+echo $I_GOTZ_CRED | sudo -S chgrp admin /usr/local/Caskroom
 
 # Immediately unset the I_GOTZ_CRED variable
 

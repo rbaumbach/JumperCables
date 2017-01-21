@@ -20,7 +20,6 @@ $ ./GiveMeAJump.sh
 
 ## Future Goals
 
-- Make it 100% automated! Currently the scripts require usernames, passwords and login credentials throughout the execution.
 - Add logging output of the entire installation
 - Make scripts less destructive so that if they are run on a machine that isn't bare bones they don't overwrite existing configurations.
 
