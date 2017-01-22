@@ -27,8 +27,9 @@ $ ./GiveMeAJump.sh
 
 ## Future Goals
 
-- Add logging output of the entire installation
+- Allow individual running of install scripts (currently Jumper Cables must be ran as a whole)
 - Make scripts less destructive so that if they are run on a machine that isn't bare bones they don't overwrite existing configurations.
+- Add logging output of the entire installation
 
 ## For your personal usage
 
@@ -36,6 +37,18 @@ If you'd like to customize this project for a project's use:
 
 - Fork the project
 - Edit the scripts to your liking
+
+## Notes on security
+
+The purpose of these scripts are to create a 100% unattended installation of all my settings, apps, etc. on my personal machines.  This makes is simple wipe my machines at will (such as performing clean 100% installations of macOS with each version instead of an upgrade) while keeping development configuration setup at a minimal.  This repo was not meant to be stored on a public machine or it's contents left for prying eyes as it could contain sensitive information.
+
+### Config.sh file
+
+This file contains sensitive information such as Github tokens and SSH/GPG key passphrases.  After a successful jump this file should be deleted if it can be viewed by anybody who has access to the machine.
+
+### Password
+
+These scripts are able to "cache" your password in order that all scripts can be run unattended.  This is done by [generating a throw away SSH key and saving your password to file and encrypting it using ssl](https://github.com/rbaumbach/JumperCables/blob/master/installz/setup.sh), and then decrypting it whenever it's needed.  [At the end of the scripts](https://github.com/rbaumbach/JumperCables/blob/master/installz/the-end.sh) this encrypted file along with the throw away SSH is deleted.
 
 ## Acknowledgements
 
