@@ -6,7 +6,6 @@ echo "Installing Ruby"
 echo
 echo "Installing rbenv to handle ruby versioning"
 brew install rbenv
-eval "$(rbenv init -)"
 
 echo
 echo "Adding rbenv initialization to .bash_profile..."
