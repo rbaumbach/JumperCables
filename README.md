@@ -10,11 +10,18 @@ A set of scripts that give a fresh install of OS X a jump
 
 ## Using Jumper Cables
 
-Open up the OS X Terminal and run the following commands:
+Clone the Jumper Cables repository and navigate to the root directory:
 
 ```sh
 $ git clone git@github.com:rbaumbach/JumperCables.git
 $ cd JumperCables
+```
+
+Update [configz/config.sh](https://github.com/rbaumbach/JumperCables/blob/master/configz/config.sh) configuration script with your information.  This file contains environmental variables that are used throughout the script that will be used when generating your SSH/GPG keys, git configurations and .bash_profile environmental variables.
+
+Once your configuration is complete, open up the OS X Terminal and run the following command in the Jumper Cables project root directory:
+
+```sh
 $ ./GiveMeAJump.sh
 ```
 
