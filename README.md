@@ -48,7 +48,7 @@ This file contains sensitive information such as Github tokens and SSH/GPG key p
 
 ### Password
 
-These scripts are able to "cache" your password in order that all scripts can be run unattended.  This is done by [generating a throw away SSH key and saving your password to file and encrypting it using ssl](https://github.com/rbaumbach/JumperCables/blob/master/installz/setup.sh), and then decrypting it whenever it's needed.  [At the end of the scripts](https://github.com/rbaumbach/JumperCables/blob/master/installz/the-end.sh) this encrypted file along with the throw away SSH is deleted.
+These scripts are able to "cache" your password in order that all scripts can be run unattended.  This is done by [generating a throw away SSH key and saving your password to file and encrypting it using ssl](https://github.com/rbaumbach/JumperCables/blob/master/installz/setup.sh), and then decrypting it whenever it's needed.  [At the end of the scripts](https://github.com/rbaumbach/JumperCables/blob/master/installz/the-end.sh) this encrypted file along with the throw away SSH key is deleted.
 
 ## Acknowledgements
 
