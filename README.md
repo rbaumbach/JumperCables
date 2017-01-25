@@ -27,9 +27,9 @@ $ ./GiveMeAJump.sh
 
 ## Future Goals
 
-- Allow individual running of install scripts (currently Jumper Cables must be ran as a whole)
+- Allow individual running of install scripts (currently Jumper Cables must be ran as a whole).
 - Make scripts less destructive so that if they are run on a machine that isn't bare bones they don't overwrite existing configurations.
-- Add logging output of the entire installation
+- Add logging output of the entire installation.
 
 ## For your personal usage
 
