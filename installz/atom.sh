@@ -17,8 +17,12 @@ apm install highlight-selected
 apm install rest-client
 apm install todo-show
 
+apm install language-docker
+apm install language-rspec
+
 apm install linter
-apm install linter-shellcheck
 apm install linter-bootlint
+apm install linter-ruby
+apm install linter-shellcheck
 
 apm install xkcd-comics
