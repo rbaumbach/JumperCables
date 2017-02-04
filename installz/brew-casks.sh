@@ -90,7 +90,7 @@ brew cask install launchcontrol
 brew cask install macdown
 brew cask install opera
 brew cask install pngyu
-brew cask install skitch
+brew cask install postman
 
 # jump out of sudo to reset timer
 sudo -k
@@ -107,6 +107,7 @@ echo $I_GOTZ_CRED | sudo -S ls >/dev/null
 
 unset I_GOTZ_CRED
 
+brew cask install skitch
 brew cask install spectacle
 brew cask install steam
 brew cask install visual-studio-code
