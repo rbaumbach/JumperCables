@@ -5,9 +5,11 @@ CONFIGZ_DIR="$(dirname "$0")"/../configz
 echo
 echo "Installing GPG"
 
+# Note, gpg on homebrew is now version 2
+
 echo
-echo "Installing gpg2.1..."
-brew install gnupg21
+echo "Installing gpg"
+brew install gnupg
 
 echo "Installing pinentry-mac..."
 brew install pinentry-mac
@@ -63,14 +65,14 @@ gpgconf --kill gpg-agent
 
 echo
 echo "Listing keys..."
-gpg2 --list-keys
+gpg --list-keys
 
 echo
 echo "Update git global config to use generated gpg public key"
-public_key=$(gpg2 --list-keys | sed 's: ::g' | sed -n 4p)
+public_key=$(gpg --list-keys | sed 's: ::g' | sed -n 4p)
 git config --global user.signingkey $public_key
 
 echo
-echo "Update git global config to use gpg2 and sign commits automatically"
-git config --global gpg.program gpg2
+echo "Update git global config to use gpg and sign commits automatically"
+git config --global gpg.program gpg
 git config --global commit.gpgsign true
