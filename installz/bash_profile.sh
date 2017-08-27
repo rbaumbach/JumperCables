@@ -17,3 +17,10 @@ echo "# fastlane"
 echo "" >> ~/.bash_profile
 echo "export FASTLANE_OPT_OUT_USAGE=$FASTLANE_OPT_OUT_USAGE" >> ~/.bash_profile
 echo "" >> ~/.bash_profile
+
+echo
+echo "Disable CocoaPods tracking"
+echo "# CocoaPods"
+echo "" >> ~/.bash_profile
+echo "export COCOAPODS_DISABLE_STATS=$COCOAPODS_DISABLE_STATS" >> ~/.bash_profile
+echo "" >> ~/.bash_profile

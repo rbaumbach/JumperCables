@@ -35,3 +35,4 @@ export SSH_KEY_PASSPHRASE="<You can make this whatever you want>"
 # bash_profile.sh
 
 export FASTLANE_OPT_OUT_USAGE=1
+export COCOAPODS_DISABLE_STATS=1
