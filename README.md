@@ -52,6 +52,6 @@ These scripts are able to "cache" your password in order that all scripts can be
 
 ## Acknowledgements
 
-The name Jumper Cables was created by none other than [Mr. WDW](https://github.com/weitzel926) himself (Along with another great name, "Skid Greaser").
+The name Jumper Cables was created by none other than [Mr. WDW](https://github.com/weitzel926) himself (Along with another great name, "Skid Greaser").  Additional thanks to [ornithocoder](https://github.com/ornithocoder) as well.
 
 These scripts were inspired by [Pivotal Workstation Setup](https://github.com/pivotal/workstation-setup).
